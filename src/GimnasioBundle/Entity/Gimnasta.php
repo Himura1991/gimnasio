@@ -34,12 +34,12 @@ class Gimnasta
     protected $dni;
 
     /**
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="string")
      */
     protected $fechaIngreso;
 
     /**
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="string")
      */
     protected $fechaPago;
 

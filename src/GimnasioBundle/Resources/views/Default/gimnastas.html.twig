@@ -20,28 +20,34 @@
                 </li>
             </ol>
         </div>
+
     </div>
     <!-- /.row -->
 
-    <div class="col-sm-4">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h3 class="panel-title">Buscador</h3>
+    <div class="col-sm-12">
+        <div class="col-sm-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Buscador</h3>
+                </div>
+                <div class="panel-body">
+                    <form id="buscar" role="form">
+                        <div class="form-group">
+                            <select id="tipo" class="form-control">
+                                <option value="dni">DNI</option>
+                                <option value="name">Nombre</option>
+                                <option value="email">E-mail</option>
+                            </select>
+                            <label> Buscar </label>
+                            <input id="dato" class="form-control">
+                            <button type="submit" class="btn btn-default">Buscar</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="panel-body">
-                <form id="buscar" role="form">
-                    <div class="form-group">
-                        <select id="tipo" class="form-control">
-                            <option value="dni">DNI</option>
-                            <option value="name">Nombre</option>
-                            <option value="email">E-mail</option>
-                        </select>
-                        <label> Buscar </label>
-                        <input id="dato" class="form-control">
-                        <button type="submit" class="btn btn-default">Buscar</button>
-                    </div>
-                </form>
-            </div>
+        </div>
+        <div class="col-sm-6">
+            <a href="{{ url('create-gimnastas') }}" class="button btn btn-lg btn-primary alignright">Crear Nuevo Gimnasta</a>
         </div>
     </div>
 
@@ -83,8 +89,8 @@
                             <td>{{ article.fechaPago | date('Y-m-d') }}</td>
                             <td>{{ article.email }}</td>
                             <td>
-                                <a href="url('create')" class="glyphicon glyphicon-edit"/> </br>
-                                <a href="url('delete')" class="glyphicon glyphicon-trash"/> </br>
+                                <a href="{{ url('editar-gimnastas', {'id':article.id})}}" class="glyphicon glyphicon-edit"/> </br>
+                                <a href="{{ url('eliminar-gimnastas', {'id':article.id})}}" class="glyphicon glyphicon-trash"/> </br>
                             </td>
                         </tr>
                     {% endfor %}
