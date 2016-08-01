@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% block css %}
+    {{ include('header.html.twig') }}
+{% endblock %}
+<body>
+
+<div id="wrapper">
+
+    {% block nav %}
+        {{ include('navigation.html.twig') }}
+    {% endblock %}
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            {% block body %}
+            {% endblock %}
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
+</div>
+<!-- /#wrapper -->
+{% block javascript %}
+    {{ include('foot.html.twig') }}
+{% endblock %}
+</body>
+
+</html>

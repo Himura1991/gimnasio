@@ -1,0 +1,104 @@
+{% extends "base.html.twig" %}
+{% block css %}
+    <link href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css">
+    {{ parent() }}
+
+{% endblock %}
+{% block body %}
+    <div class="row">
+        <!-- Page Heading -->
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                Gimnastas <small>Todos los gimnastas anotados</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li>
+                    <i class="fa fa-dashboard"></i> Panel Principal
+                </li>
+                <li class="active">
+                    <i class="fa fa-list"></i> Gimnastas
+                </li>
+            </ol>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="col-sm-4">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Buscador</h3>
+            </div>
+            <div class="panel-body">
+                <form id="buscar" role="form">
+                    <div class="form-group">
+                        <select id="tipo" class="form-control">
+                            <option value="dni">DNI</option>
+                            <option value="name">Nombre</option>
+                            <option value="email">E-mail</option>
+                        </select>
+                        <label> Buscar </label>
+                        <input id="dato" class="form-control">
+                        <button type="submit" class="btn btn-default">Buscar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    {% if  pagination.getTotalItemCount == 0 %}
+        <div class="row">
+            <div class="col-sm-12">
+                 <h1 > No se han encontrado elementos </h1>
+            </div>
+        </div>
+    {% else %}
+        <div class="row">
+            <div class="count">
+                <div class="col-lg-12">
+                    <span > Total: {{ pagination.getTotalItemCount }} gimnastas anotados en la base de datos</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <table class="table table-bordered table-hover">
+                    <tr>
+                        {# sorting of properties based on query components #}
+                        <th{% if pagination.isSorted('a.id') %} class="-sort-desc" {% else %} class="-sort" {% endif %}>{{ knp_pagination_sortable(pagination, 'Id', 'a.id') }}</th>
+                        <th{% if pagination.isSorted('a.dni') %} class="-sort-desc" {% else %} class="-sort" {% endif %}>{{ knp_pagination_sortable(pagination, 'DNI', 'a.dni') }}</th>
+                        <th{% if pagination.isSorted('a.name') %} class="-sort-desc" {% else %} class="-sort" {% endif %}>{{ knp_pagination_sortable(pagination, 'Name', 'a.name') }}</th>
+                        <th{% if pagination.isSorted('a.fechaIngreso') %} class="-sort-desc" {% else %} class="-sort" {% endif %}>{{ knp_pagination_sortable(pagination, 'fecha de Ingreso', 'a.fechaIngreso') }}</th>
+                        <th{% if pagination.isSorted('a.fechaPago') %} class="-sort-desc" {% else %} class="-sort" {% endif %}>{{ knp_pagination_sortable(pagination, 'fecha de Pago', 'a.fechaPago') }}</th>
+                        <th>Email</th>
+                        <th>Acciones</th>
+                    </tr>
+
+                    {# table body #}
+                    {% for article in pagination %}
+                        <tr {% if loop.index is odd %}class="color"{% endif %}>
+                            <td>{{ article.id }}</td>
+                            <td>{{ article.dni }}</td>
+                            <td>{{ article.name }}</td>
+                            <td>{{ article.fechaIngreso | date('Y-m-d') }}</td>
+                            <td>{{ article.fechaPago | date('Y-m-d') }}</td>
+                            <td>{{ article.email }}</td>
+                            <td>
+                                <a href="url('create')" class="glyphicon glyphicon-edit"/> </br>
+                                <a href="url('delete')" class="glyphicon glyphicon-trash"/> </br>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </table>
+                {# display navigation #}
+                <div class="navigation">
+                    {{ knp_pagination_render(pagination) }}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
+
+{% block javascript %}
+    {{ parent() }}
+    <script src="{{ asset('js/gimnastas.js') }}"></script>
+{% endblock %}
