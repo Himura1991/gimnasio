@@ -9,14 +9,14 @@
         <!-- Page Heading -->
         <div class="col-lg-12">
             <h1 class="page-header">
-                Gimnastas <small>Todos los gimnastas anotados</small>
+                Socios <small>Todos los Socios anotados</small>
             </h1>
             <ol class="breadcrumb">
                 <li>
                     <i class="fa fa-dashboard"></i> Panel Principal
                 </li>
                 <li class="active">
-                    <i class="fa fa-list"></i> Gimnastas
+                    <i class="fa fa-list"></i> Socios
                 </li>
             </ol>
         </div>
@@ -34,8 +34,8 @@
                     <form id="buscar" role="form">
                         <div class="form-group">
                             <select id="tipo" class="form-control">
-                                <option value="dni">DNI</option>
                                 <option value="name">Nombre</option>
+                                <option value="dni">DNI</option>
                                 <option value="email">E-mail</option>
                             </select>
                             <label> Buscar </label>
@@ -47,7 +47,7 @@
             </div>
         </div>
         <div class="col-sm-6">
-            <a href="{{ url('create-gimnastas') }}" class="button btn btn-lg btn-primary alignright">Crear Nuevo Gimnasta</a>
+            <a href="{{ url('create-gimnastas') }}" class="button btn btn-lg btn-primary alignright">Crear Nuevo Socio</a>
         </div>
     </div>
 
@@ -61,7 +61,7 @@
         <div class="row">
             <div class="count">
                 <div class="col-lg-12">
-                    <span > Total: {{ pagination.getTotalItemCount }} gimnastas anotados en la base de datos</span>
+                    <span > Total: {{ pagination.getTotalItemCount }} Socios anotados en la base de datos</span>
                 </div>
             </div>
         </div>

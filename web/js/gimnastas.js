@@ -3,7 +3,7 @@ $('#buscar').on('submit', function(e){
     var tipo = $('#tipo').val();
     var dato = $('#dato').val();
 
-    window.location.replace("gimnastas" + "?" + "tipo=" + tipo + "&dato=" + dato);
+    window.location.replace("socios" + "?" + "tipo=" + tipo + "&dato=" + dato);
 
 });
 
@@ -24,7 +24,7 @@ $('#newGim').on('submit', function(e){
         },
 
         function(data, status){
-            alert("El usuario " + nombre + " ha sido creado")
+            alert("El socio: " + nombre + " ha sido creado")
         });
 });
 

@@ -22,14 +22,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GimnasioBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="64" column="41" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
+            <state relative-caret-position="393">
+              <caret line="108" column="22" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="22" />
               <folding>
                 <element signature="e#45#80#0#PHP" expanded="true" />
-                <marker date="1471391783151" expanded="true" signature="833:872" placeholder="SELECT a FRO... GimnasioBundle" />
+                <marker date="1471393825818" expanded="true" signature="830:869" placeholder="SELECT a FRO... GimnasioBundle" />
               </folding>
             </state>
           </provider>
@@ -38,8 +38,8 @@
       <file leaf-file-name="editar.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GimnasioBundle/Resources/views/Default/editar.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="597">
-              <caret line="52" column="92" selection-start-line="52" selection-start-column="92" selection-end-line="52" selection-end-column="124" />
+            <state relative-caret-position="306">
+              <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -48,8 +48,18 @@
       <file leaf-file-name="gimnastas.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GimnasioBundle/Resources/views/Default/gimnastas.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="88" column="52" selection-start-line="88" selection-start-column="52" selection-end-line="88" selection-end-column="52" />
+            <state relative-caret-position="1564">
+              <caret line="92" column="62" selection-start-line="92" selection-start-column="62" selection-end-line="92" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidebar.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/sidebar.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="89" selection-start-line="7" selection-start-column="89" selection-end-line="7" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -58,8 +68,8 @@
       <file leaf-file-name="gimnastas.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/gimnastas.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+            <state relative-caret-position="442">
+              <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -98,8 +108,8 @@
       <file leaf-file-name="new_gimnasta.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GimnasioBundle/Resources/views/Default/new_gimnasta.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="46" column="115" selection-start-line="46" selection-start-column="101" selection-end-line="46" selection-end-column="115" />
+            <state relative-caret-position="51">
+              <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -128,7 +138,6 @@
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/GimnasioBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/GimnasioBundle/Entity/Gimnastas.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/sidebar.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/foot.html.twig" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
@@ -137,11 +146,12 @@
         <option value="$PROJECT_DIR$/app/Resources/views/topmenu.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/navigation.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/header.html.twig" />
-        <option value="$PROJECT_DIR$/src/GimnasioBundle/Resources/views/Default/new_gimnasta.html.twig" />
         <option value="$PROJECT_DIR$/src/GimnasioBundle/Resources/views/Default/gimnastas.html.twig" />
-        <option value="$PROJECT_DIR$/web/js/gimnastas.js" />
+        <option value="$PROJECT_DIR$/src/GimnasioBundle/Resources/views/Default/new_gimnasta.html.twig" />
         <option value="$PROJECT_DIR$/src/GimnasioBundle/Resources/views/Default/editar.html.twig" />
         <option value="$PROJECT_DIR$/src/GimnasioBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/web/js/gimnastas.js" />
+        <option value="$PROJECT_DIR$/app/Resources/views/sidebar.html.twig" />
       </list>
     </option>
   </component>
@@ -418,12 +428,12 @@
       <workItem from="1467843743373" duration="4559000" />
       <workItem from="1468118302837" duration="8642000" />
       <workItem from="1469493346132" duration="17366000" />
-      <workItem from="1471386780782" duration="3040000" />
+      <workItem from="1471386780782" duration="4486000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33607000" />
+    <option name="totallyTimeSpent" value="35053000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -511,7 +521,7 @@
           <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
           <folding>
             <element signature="e#45#80#0#PHP" expanded="true" />
-            <marker date="1471391783151" expanded="true" signature="833:872" placeholder="SELECT a FRO... GimnasioBundle" />
+            <marker date="1471393825818" expanded="true" signature="830:869" placeholder="SELECT a FRO... GimnasioBundle" />
           </folding>
         </state>
       </provider>
@@ -520,6 +530,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -714,13 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/sidebar.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GimnasioBundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -781,22 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GimnasioBundle/Resources/views/Default/gimnastas.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="88" column="52" selection-start-line="88" selection-start-column="52" selection-end-line="88" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/gimnastas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/navigation.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -815,28 +803,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GimnasioBundle/Resources/views/Default/new_gimnasta.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="46" column="115" selection-start-line="46" selection-start-column="101" selection-end-line="46" selection-end-column="115" />
+        <state relative-caret-position="51">
+          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GimnasioBundle/Resources/views/Default/editar.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="52" column="92" selection-start-line="52" selection-start-column="92" selection-end-line="52" selection-end-column="124" />
+        <state relative-caret-position="306">
+          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GimnasioBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="64" column="41" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
+        <state relative-caret-position="393">
+          <caret line="108" column="22" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="22" />
           <folding>
             <element signature="e#45#80#0#PHP" expanded="true" />
-            <marker date="1471391783151" expanded="true" signature="833:872" placeholder="SELECT a FRO... GimnasioBundle" />
+            <marker date="1471393825818" expanded="true" signature="830:869" placeholder="SELECT a FRO... GimnasioBundle" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/gimnastas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GimnasioBundle/Resources/views/Default/gimnastas.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1564">
+          <caret line="92" column="62" selection-start-line="92" selection-start-column="62" selection-end-line="92" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/sidebar.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="89" selection-start-line="7" selection-start-column="89" selection-end-line="7" selection-end-column="89" />
+          <folding />
         </state>
       </provider>
     </entry>

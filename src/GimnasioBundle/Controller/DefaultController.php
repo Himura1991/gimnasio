@@ -21,7 +21,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/gimnastas", name="abml-gimnastas")
+     * @Route("/socios", name="abml-gimnastas")
      */
     public function gimnastasAction(Request $request)
     {
@@ -45,14 +45,14 @@ class DefaultController extends Controller
 
     }
     /**
-     * @Route("/gimnastas/create", name="create-gimnastas")
+     * @Route("/socios/create", name="create-gimnastas")
      */
     public function createGimnastaAction(Request $request) {
         return $this->render('GimnasioBundle:Default:new_gimnasta.html.twig');
     }
 
     /**
-     * @Route("/gimnastas/agregar", name="agregar-gimnastas")
+     * @Route("/socios/agregar", name="agregar-gimnastas")
      * @Method({"POST"})
      */
     public function agregarGimnastaAction(Request $request) {
@@ -77,7 +77,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/gimnastas/eliminar/{id}", name="eliminar-gimnastas")
+     * @Route("/socios/eliminar/{id}", name="eliminar-gimnastas")
      * @Method({"GET"})
      */
     public function deleteAction(Request $request, $id) {
@@ -94,7 +94,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/gimnastas/editar/{id}", name="editar-gimnastas")
+     * @Route("/socios/editar/{id}", name="editar-gimnastas")
      * @Method({"GET"})
      */
     public function editAction(Request $request, $id) {
@@ -106,7 +106,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/gimnastas/editar/{id}", name="editar2-gimnastas")
+     * @Route("/socios/editar/{id}", name="editar2-gimnastas")
      * @Method({"POST"})
      */
     public function applyEditAction(Request $request, $id) {
