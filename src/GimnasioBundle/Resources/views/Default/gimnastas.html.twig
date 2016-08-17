@@ -85,8 +85,8 @@
                             <td>{{ article.id }}</td>
                             <td>{{ article.dni }}</td>
                             <td>{{ article.name }}</td>
-                            <td>{{ article.fechaIngreso | date('Y-m-d') }}</td>
-                            <td>{{ article.fechaPago | date('Y-m-d') }}</td>
+                            <td>{{ article.fechaIngreso }}</td>
+                            <td>{{ article.fechaPago }}</td>
                             <td>{{ article.email }}</td>
                             <td>
                                 <a href="{{ url('editar-gimnastas', {'id':article.id})}}" class="glyphicon glyphicon-edit"/> </br>

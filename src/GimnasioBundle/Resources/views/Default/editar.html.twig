@@ -40,7 +40,17 @@
 
         <div class="form-group">
             <label>Email</label>
-            <input id="email" class="form-control" placeholder="Ingrese su Email"  value="{{ gimnasta.email }}">
+            <input id="email" class="form-control" placeholder="Ingrese su Email"  value="{{ gimnasta.email  }}">
+        </div>
+
+        <div class="form-group">
+            <label>Dia de ingreso</label>
+            <input id="beginDate" class="form-control" placeholder="Fecha de Ingreso" value="{{ gimnasta.fechaIngreso |date("d-m-Y") }}">
+        </div>
+
+        <div class="form-group">
+            <label>Dia de Pago</label>
+            <input id="payDate" class="form-control" placeholder="Fecha de Pago" value="{{ gimnasta.fechaPago |date("d-m-Y") }}">
         </div>
 
         <button type="submit" class="btn btn-default btn-success">Editar</button>

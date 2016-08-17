@@ -42,6 +42,17 @@
             <input id="email" class="form-control" placeholder="Ingrese su Email">
         </div>
 
+        <div class="form-group">
+            <label>Dia de ingreso</label>
+            <input id="beginDate" class="form-control" placeholder="Fecha de Ingreso" value="{{ "now"|date("d-m-Y") }}">
+        </div>
+
+        <div class="form-group">
+            <label>Dia de Pago</label>
+            <input id="payDate" class="form-control" placeholder="Fecha de Pago" value="{{ "now"|date("d-m-Y") }}">
+        </div>
+
+
         <button type="submit" class="btn btn-default btn-success">Agregar</button>
         <button type="reset" class="btn btn-default btn-danger">Limpiar</button>
     </form>

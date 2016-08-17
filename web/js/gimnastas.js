@@ -12,12 +12,15 @@ $('#newGim').on('submit', function(e){
     var nombre = $('#name').val();
     var email  = $('#email').val();
     var dni    = $('#dni').val();
-
+    var fechadePago   = $('#payDate').val();
+    var fechadeIngreso   = $('#beginDate').val();
     $.post("agregar",
         {
             name : nombre,
             email: email,
-            dni  : dni
+            dni  : dni,
+            payDate : fechadePago,
+            beginDate : fechadeIngreso
         },
 
         function(data, status){
@@ -31,12 +34,16 @@ $('#editGim').on('submit', function(e){
     var email  = $('#email').val();
     var dni    = $('#dni').val();
     var id     = $('#numero').val();
+    var fechadePago   = $('#payDate').val();
+    var fechadeIngreso   = $('#beginDate').val();
     $.post( id,
         {
             name : nombre,
             email: email,
             dni  : dni,
-            id   : id
+            id   : id,
+            payDate : fechadePago,
+            beginDate : fechadeIngreso
         },
 
         function(data, status){

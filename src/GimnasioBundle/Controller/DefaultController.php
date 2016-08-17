@@ -61,8 +61,8 @@ class DefaultController extends Controller
         $gimnasta->setDni($request->get("dni"));
         $gimnasta->setEmail($request->get("email"));
         $gimnasta->setName($request->get("name"));
-        $gimnasta->setFechaIngreso(date("Y-m-d H:i:s"));
-        $gimnasta->setFechaPago(date("Y-m-d H:i:s"));
+        $gimnasta->setFechaIngreso(date("d-m-Y", strtotime($request->get("beginDate"))));
+        $gimnasta->setFechaPago(date("d-m-Y", strtotime($request->get("payDate"))));
         $gimnasta->setHabilitado(1);
         $gimnasta->setFoto("");
         $em = $this->getDoctrine()->getManager();
@@ -117,6 +117,8 @@ class DefaultController extends Controller
         $gimnasta->setDni($request->get("dni"));
         $gimnasta->setEmail($request->get("email"));
         $gimnasta->setName($request->get("name"));
+        $gimnasta->setFechaIngreso(date("d-m-Y", strtotime($request->get("beginDate"))));
+        $gimnasta->setFechaPago(date("d-m-Y", strtotime($request->get("payDate"))));
 
 
         $em = $this->getDoctrine()->getManager();
