@@ -5,13 +5,44 @@
         <!-- Page Heading -->
         <div class="col-lg-12">
             <h1 class="page-header">
-                Dashboard <small>Statistics Overview</small>
+                Dashboard
             </h1>
             <ol class="breadcrumb">
                 <li class="active">
-                    <i class="fa fa-dashboard"></i> Dashboard
+                    <i class="fa fa-dashboard"></i> Socios Impagos
                 </li>
             </ol>
+
+            {% if  pagination|length == 0 %}
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2> No se han encontrado elementos </h2>
+                </div>
+            </div>
+            {% else %}
+            <div class="row">
+                <div class="col-lg-12">
+                    <table class="table table-bordered table-hover">
+                        <tr>
+                            {# sorting of properties based on query components #}
+                            <th> Nombre</th>
+                            <th> Fecha de Pago</th>
+                        </tr>
+
+                        {# table body #}
+                        {% for article in pagination %}
+                            <tr {% if loop.index is odd %}class="color"{% endif %}>
+                                <td>{{ article.name }}</td>
+                                <td>{{ article.fecha_pago }}</td>
+                                <td>
+                                    <a href="{{ url('marcar_pago', {'id':article.id})}}" class="glyphicon glyphicon-check"/> </br>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+            {% endif %}
         </div>
     </div>
     <!-- /.row -->

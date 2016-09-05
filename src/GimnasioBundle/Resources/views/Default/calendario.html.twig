@@ -1,0 +1,73 @@
+{% extends "base.html.twig" %}
+{% block css %}
+    <link href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css">
+    {{ parent() }}
+
+{% endblock %}
+{% block body %}
+    <div class="row">
+        <!-- Page Heading -->
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                Horarios de clases
+            </h1>
+            <ol class="breadcrumb">
+                <li>
+                    <i class="fa fa-dashboard"></i> Panel Principal
+                </li>
+                <li class="active">
+                    <i class="fa fa-list"></i> calendario
+                </li>
+            </ol>
+        </div>
+
+    </div>
+    <!-- /.row -->
+
+    <div class="col-lg-6">
+            <a href="{{ url('create-horario') }}" class="button btn btn-lg btn-primary alignright">Crear Nuevo horario</a>
+        </div>
+    </div>
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <table class="table table-bordered table-hover">
+                    <tr>
+                        {# sorting of properties based on query components #}
+                        <th>Horarios</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miercoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sabado</th>
+                        <th>Acciones</th>
+                    </tr>
+
+                    {# table body #}
+                    {% for article in pagination %}
+                        <tr {% if loop.index is odd %}class="color"{% endif %}>
+                            <td>{{ article.horario }}</td>
+                            <td>{{ article.lunes }}</td>
+                            <td>{{ article.martes }}</td>
+                            <td>{{ article.miercoles}}</td>
+                            <td>{{ article.jueves }}</td>
+                            <td>{{ article.viernes }}</td>
+                            <td>{{ article.sabado }}</td>
+                            <td>
+                                <a href="{{ url('editar-horario', {'id':article.id})}}" class="glyphicon glyphicon-edit"/> </br>
+                                <a href="{{ url('eliminar-horario', {'id':article.id})}}" class="glyphicon glyphicon-trash"/> </br>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+
+{% endblock %}
+
+{% block javascript %}
+    {{ parent() }}
+    <script src="{{ asset('js/gimnastas.js') }}"></script>
+{% endblock %}
